@@ -20,7 +20,7 @@ export default function Hero() {
       y: 20,
       filter: "blur(10px)"
     },
-    visible: (i) => ({
+    visible: (i:any) => ({
       opacity: 1,
       y: 0,
       filter: "blur(0px)",
