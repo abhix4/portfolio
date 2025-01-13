@@ -8,11 +8,12 @@ export default function Footer(){
             <div className="text-white text-[18px] sm:text-[13px] sm:w-[80%] sm:text-center">
             Want to work with me? Get in touch!
             <div> E-mail me: <a href="mailto:abhiifour@gmail.com" className="underline">abhiifour@gmail.com.</a></div>
-            </div>
+            </div> 
 
             <div className="text-white flex gap-4 text-[24px] sm:text-[18px]">
             <div className="hover:bg-white p-2 rounded-full hover:text-black">
-            <FaXTwitter className="cursor-pointer"  />
+           
+            <a href="https://x.com/yeargerite"><FaXTwitter className="cursor-pointer"  /></a>
             </div>
             <div className="hover:bg-white p-2 rounded-full hover:text-black">
             <a href="https://github.com/Abhiifour"><FaGithub   className="cursor-pointer" /></a>
