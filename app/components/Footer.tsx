@@ -26,7 +26,7 @@ export default function Footer(){
             </div>
 
             <div className="text-[16px] text-my-gray sm:text-[12px] sm:w-[80%] sm:text-center">
-            ©Abhishek Singh 2024 •
+            ©Abhishek Singh 2025 •
             </div>
         </div>
     )
