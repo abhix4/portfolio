@@ -39,7 +39,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
           alt={title}  
           width={800} 
           height={500} 
-          className="max-w-[700px] max-h-[400px] sm:w-[50%] sm:h-[160px] rounded-[25px] sm:m-auto"
+          className="max-w-[700px] max-h-[400px] sm:w-[100%] sm:h-[160px] rounded-[25px] sm:m-auto "
         />
       </motion.div>
 
@@ -82,7 +82,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
         </motion.div>
 
         <motion.div 
-          className="text-my-gray text-[14px] sm:text-[12px] sm:text-start"
+          className="text-my-gray text-[14px] sm:text-[12px] sm:text-center sm:mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
