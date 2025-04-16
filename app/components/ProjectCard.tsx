@@ -39,7 +39,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
           alt={title}  
           width={800} 
           height={500} 
-          className="max-w-[700px] max-h-[400px] sm:w-[100%] sm:h-[160px] rounded-[25px] sm:m-auto "
+          className="max-w-[700px] max-h-[400px] sm:w-[80%] sm:h-[160px] rounded-[25px] sm:m-auto "
         />
       </motion.div>
 
