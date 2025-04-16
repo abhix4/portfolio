@@ -12,7 +12,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
 }) {
   return (
     <motion.div 
-      className="bg-bg-color-gray rounded-[28px] w-full flex flex-col justify-center items-center py-16 gap-10 font-Poppins sm:py-8 sm:justify-center"
+      className="bg-bg-color-gray rounded-[28px] w-full flex flex-col justify-center items-center py-10 gap-10 font-Poppins sm:py-8 sm:justify-center"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ 
         opacity: 1, 
@@ -37,14 +37,14 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
         <Image 
           src={url} 
           alt={title}  
-          width={1100} 
+          width={800} 
           height={500} 
-          className="w-[900px] h-[470px] sm:w-[85%] sm:h-[160px] rounded-[25px] sm:m-auto"
+          className="max-w-[700px] max-h-[400px] sm:w-[50%] sm:h-[160px] rounded-[25px] sm:m-auto"
         />
       </motion.div>
 
       <motion.div 
-        className="flex flex-col gap-4 items-center sm:gap-2 sm:w-[80%] w-[85%] sm:items-start"
+        className="flex flex-col gap-4 items-center sm:gap-2 sm:w-[80%]  sm:items-start max-w-[700px] mx-auto"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -55,7 +55,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
         }}
       >
         <motion.div 
-          className="text-white text-[18px] sm:text-[14px]"
+          className="text-white text-[18px] sm:text-[14px] text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -82,7 +82,7 @@ export default function ProjectCard({url, git, link, title, desc, tech}: {
         </motion.div>
 
         <motion.div 
-          className="text-my-gray text-[16px] sm:text-[12px] sm:text-start"
+          className="text-my-gray text-[14px] sm:text-[12px] sm:text-start"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

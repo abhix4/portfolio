@@ -5,9 +5,9 @@ import { IoEarth } from "react-icons/io5";
 export default function Footer(){
     return (
         <div className="flex flex-col justify-center items-center gap-8 mt-[180px] mb-[80px] font-Poppins sm:gap-4 sm:mb-12 sm:mt-16">
-            <div className="text-white text-[18px] sm:text-[13px] sm:w-[80%] sm:text-center">
+            <div className="text-white text-[18px] sm:text-[13px] sm:w-[80%] sm:text-center text-center">
             Want to work with me? Get in touch!
-            <div> E-mail me: <a href="mailto:abhiifour@gmail.com" className="underline">abhiifour@gmail.com.</a></div>
+            <div> E-mail : <a href="mailto:abhiifour@gmail.com" className="underline">abhiifour@gmail.com.</a></div>
             </div> 
 
             <div className="text-white flex gap-4 text-[24px] sm:text-[18px]">

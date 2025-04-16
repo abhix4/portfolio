@@ -57,7 +57,7 @@ const dummy = [
 
 export default function Home() {
   return (
-    <div className="font-sans">
+    <div className="font-sans max-w-4xl mx-auto">
     <NavBar/>
     <Hero/>
     <div className="flex flex-col gap-12 mt-[50px] sm:gap-10">
