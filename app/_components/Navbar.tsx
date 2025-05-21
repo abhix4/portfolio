@@ -17,11 +17,12 @@ export default function NavBar(){
             className="rounded-full cursor-pointer"
             onClick={() => router.push("/")}
             alt="abhi-logo"
+            loading="eager"
             />
 
-            <div className="flex gap-4">
-                <p className="cursor-pointer hover:text-white" onClick={() => router.push("/projects")}>Projects</p>
-                <p className="cursor-pointer hover:text-white" onClick={() => router.push("/career")}>Career</p>
+            <div className="flex gap-4 ">
+                <p className="cursor-pointer hover:text-white text-sm" onClick={() => router.push("/projects")}>Projects</p>
+                <p className="cursor-pointer hover:text-white text-sm" onClick={() => router.push("/career")}>Career</p>
             </div>
         </div>
     )
