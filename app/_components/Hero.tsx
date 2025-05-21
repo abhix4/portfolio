@@ -35,16 +35,16 @@ export default function Hero() {
   return (
     <motion.div 
       ref={containerRef}
-      className="flex justify-center h-[320px] font-Poppins sm:w-full sm:justify-start sm:h-[250px] sm:mt-[20px]"
+      className="flex justify-start  font-Poppins   sm:mt-[20px]"
       style={{ 
         filter: isLoaded ? "none" : "blur(10px)",
         transition: "filter 0.5s ease-out"
       }}
     >
-      <div className="flex flex-col items-center justify-center gap-8 text-white max-w-[1000px] sm:max-w-full sm:items-start sm:gap-2">
+      <div className="flex flex-col items-center justify-center gap-4 text-white  sm:items-start sm:gap-2">
         <motion.div
           style={{ filter: blur }}
-          className="flex flex-col gap-8 sm:gap-2"
+          className="flex flex-col gap-4 sm:gap-2"
         >
           {/* Name */}
           <motion.h1
@@ -52,27 +52,25 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={0}
-            className="text-[36px] font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 sm:text-[24px] text-center sm:text-start "
+            className="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 text-start "
           >
             Abhishek Singh
           </motion.h1>
 
           {/* Bio sections */}
-          <div className="text-center text-[22px] max-w-[900px] leading-relaxed sm:text-[15px] sm:text-start sm:w-[96%] space-y-4 text-gray-300">
+          <div className="text-start text-sm    sm:text-start  space-y-2 text-neutral-400 ">
             <motion.p
               variants={fadeUpVariants}
               initial="hidden"
               animate="visible"
               custom={1}
             >
-              A 21-year-old Programmer/Developer from India, crafting immersive web experiences.
-              Currently building <a 
-                href="https://github.com/Abhiifour/panchayat"
-                className="text-white font-medium hover:opacity-80 transition-opacity"
-              >
-                Panchayat
-              </a>, a chat app that's all about connection.Passionate about clean code, sleek design, and contributing to <span className="text-white font-medium">open-source</span> projects. <br></br>
-              Let's create something extraordinary.
+              A 21-year-old Programmer from India, crafting immersive web experiences.
+              Passionate about clean code, sleek design, and contributing to opensource projects. <br></br>
+
+              <span className="leading-8"> Besides, I also investigate in artificial intelligence technologies.</span>
+              <br></br>
+              <span>Let's create something extraordinary !</span>
             </motion.p>
 
             
