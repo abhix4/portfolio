@@ -41,7 +41,7 @@ export default function Hero() {
         transition: "filter 0.5s ease-out"
       }}
     >
-      <div className="flex flex-col items-center justify-center gap-4 text-white  sm:items-start sm:gap-2">
+      <div className="flex flex-col items-center justify-center gap-4 text-neutral-100  sm:items-start sm:gap-2">
         <motion.div
           style={{ filter: blur }}
           className="flex flex-col gap-4 sm:gap-2"
@@ -52,13 +52,13 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={0}
-            className="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 text-start "
+            className="text-xl text-neutral-100 text-start "
           >
             Abhishek Singh
           </motion.h1>
 
           {/* Bio sections */}
-          <div className="text-start text-sm    sm:text-start  space-y-2 text-neutral-400 ">
+          <div className="text-start text-sm    sm:text-start  space-y-4 text-neutral-400 sm:mt-2">
             <motion.p
               variants={fadeUpVariants}
               initial="hidden"
