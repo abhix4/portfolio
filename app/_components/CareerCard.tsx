@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CareerCard(){
     return (
-        <div className="flex justify-between items-center text-neutral-400 px-2 py-4 rounded-lg bg-bg-color-gray sm:items-start">
+        <div className="flex justify-between items-center text-neutral-400 px-4 py-4 rounded-lg bg-bg-color-gray sm:items-start">
            <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-center">
             <Image
             src="/rappo.svg"
