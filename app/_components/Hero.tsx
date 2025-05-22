@@ -68,7 +68,7 @@ export default function Hero() {
               A 21-year-old Programmer from India, crafting immersive web experiences.
               Passionate about clean code, sleek design, and contributing to opensource projects. <br></br>
 
-              <span className="leading-8"> Besides, I also investigate in artificial intelligence technologies.</span>
+              <span> Besides, I also investigate in artificial intelligence technologies.</span>
               <br></br>
               <span>Let's create something extraordinary !</span>
             </motion.p>
