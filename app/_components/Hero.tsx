@@ -65,8 +65,8 @@ export default function Hero() {
               animate="visible"
               custom={1}
             >
-              A 21-year-old Programmer from India, crafting immersive web experiences.
-              Passionate about clean code, sleek design, and contributing to opensource projects. <br></br>
+              A 21-year-old <strong>Programmer</strong> from India, crafting immersive web experiences.
+              Passionate about clean code, sleek design, and contributing to <strong>opensource</strong> projects. <br></br>
 
               <span> Besides, I also investigate in artificial intelligence technologies.</span>
               <br></br>
@@ -75,6 +75,8 @@ export default function Hero() {
 
             
           </div>
+
+          {/* good projects */}
         </motion.div>
       </div>
     </motion.div>

@@ -36,10 +36,10 @@ export default function Footer(){
             <div className="text-white flex gap-4 text-sm ">
             <div className=" hover:text-neutral-500">
            
-            <a href="https://x.com/yeargerite" className="flex gap-1 items-center"><FaXTwitter className="cursor-pointer"  /> <p className="text-xs">Twitter</p></a>
+            <a href="https://x.com/abhiix4" className="flex gap-1 items-center"><FaXTwitter className="cursor-pointer"  /> <p className="text-xs">Twitter</p></a>
             </div>
             <div className=" hover:text-neutral-500">
-            <a href="https://github.com/abhiifour" className="flex gap-1 items-center"><FaGithub   className="cursor-pointer" /> <p className="text-xs ">Github</p></a>
+            <a href="https://github.com/abhix4" className="flex gap-1 items-center"><FaGithub   className="cursor-pointer" /> <p className="text-xs ">Github</p></a>
             </div>
             {/* <div className="hover:bg-white p-2 rounded-full hover:text-black">
             <IoEarth  className="cursor-pointer" />

@@ -21,7 +21,7 @@ export default function ProjectCard({url, git, link, title, desc, tech , index}:
       }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ 
-        duration: index * 0.3,
+        duration:0.2,
         ease: [0.33, 1, 0.68, 1]  // Custom easing curve for smoother motion
       }}
     >
@@ -50,7 +50,7 @@ export default function ProjectCard({url, git, link, title, desc, tech , index}:
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ 
-          duration: index * 0.3,
+          duration: index * 0.1,
           ease: [0.33, 1, 0.68, 1],
           delay: 0.2
         }}
