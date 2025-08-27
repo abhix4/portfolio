@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 export default function NavBar(){
-     const router = useRouter()
+    const router = useRouter()
     return(
 
        
@@ -22,7 +22,7 @@ export default function NavBar(){
 
             <div className="flex gap-4 ">
                 <p className="cursor-pointer hover:text-white text-sm" onClick={() => router.push("/projects")}>Projects</p>
-                <p className="cursor-pointer hover:text-white text-sm" onClick={() => router.push("/career")}>Career</p>
+                <p className="cursor-pointer hover:text-white text-sm" onClick={() => router.push("/career")}>Timeline</p>
             </div>
         </div>
     )
