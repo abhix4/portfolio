@@ -1,4 +1,4 @@
-
+import { ScrollArea } from "@/components/ui/scroll-area"
 import CareerCard from "../_components/CareerCard";
 import Opensource from "../_components/OpenSource";
 
@@ -62,13 +62,17 @@ export default function CareersPage() {
         <h1 className="text-white text-xl mb-6">Career timeline</h1>
         <CareerCard/>
         <h1 className="text-white text-xl py-6">Open Source Contributions</h1>    
-        <div className="max-h-[400px] overflow-y-auto flex flex-col gap-1.5 scrollbar">
-            {
+       
+            <ScrollArea className="max-h-[400px]  flex flex-col w-full">
+                <div className=" flex flex-col gap-2">
+  {
                 contributions.map((contribution, index) => (
                     <Opensource key={index} title={contribution.title} company={contribution.company} url={contribution.url}/>
                 ))
             }
-        </div>
+                </div>
+         
+            </ScrollArea>
         {/* <Opensource/> */}
     </div>);
 }
