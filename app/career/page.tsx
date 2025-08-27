@@ -1,6 +1,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import CareerCard from "../_components/CareerCard";
 import Opensource from "../_components/OpenSource";
+import { Metadata } from "next";
 
 const contributions = [
       { title: "Add opacity to icons and fix separator colors in mail context menu", url: "https://github.com/Mail-0/Zero/pull/1296", company: "Mail-0" },
@@ -56,12 +57,35 @@ const contributions = [
 
 ];
 
+export const metadata: Metadata = {
+  title: "Abhishek | OSS Contributions",
+  description: "My open-source contributions and journey.",
+  openGraph: {
+    title: "Abhishek | OSS Contributions",
+    description: "Explore my open-source journey and contributions.",
+    url: "https://i.abhiifour.xyz/career",
+    siteName: "Abhishek's Portfolio",
+    images: [
+      {
+        url: "https://i.abhiifour.xyz/oss.png", // put your image in /public and use /og-image.png
+        width: 1200,
+        height: 630,
+        alt: "Abhishek OSS Contributions",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/oss.png"], // relative path works from /public
+  },
+};
 
 export default function CareersPage() {
     return (<div>
         <h1 className="text-white text-xl mb-6">Career timeline</h1>
         <CareerCard/>
-        <h1 className="text-white text-xl py-6">Open Source Contributions</h1>    
+        <h1 className="text-white text-xl py-6">OSS Contributions</h1>    
        
             <ScrollArea className="max-h-[400px]  flex flex-col w-full">
                 <div className=" flex flex-col gap-2">

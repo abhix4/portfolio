@@ -14,8 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abhishek",
-  description: "Abhishek's portfolio showcasing full-stack web development projects built with Next.js and Tailwind CSS",
+  title: {
+    default: "Abhishek | Portfolio",
+    template: "%s | Abhishek",
+  },
+  description: "Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨",
+  openGraph: {
+    siteName: "Abhishek's Portfolio",
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
