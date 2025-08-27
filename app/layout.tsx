@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   description: "Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨",
   openGraph: {
     siteName: "Abhishek's Portfolio",
-    images: ["/og-image.png"],
+    images: ["/oss.png"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/og-image.png"],
+    images: ["/oss.png"],
   },
 };
 
