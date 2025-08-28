@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/oss.png"], // relative path works from /public
+    images: ["/oss.png"], 
   },
 };
 
