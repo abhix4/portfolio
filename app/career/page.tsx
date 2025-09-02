@@ -4,7 +4,11 @@ import Opensource from "../_components/OpenSource";
 import { Metadata } from "next";
 
 const contributions = [
-      { title: "Add opacity to icons and fix separator colors in mail context menu", url: "https://github.com/Mail-0/Zero/pull/1296", company: "Mail-0" },
+  { title: "fix: regex and id extraction for giphy media urls ", url: "https://github.com/calcom/cal.com/pull/22276", company: "calcom" },
+  { title: "fix: month label overlapping", url: "https://github.com/ossdotnow/ossdotnow/pull/216", company: "ossdotnow" },
+  { title: "add attachments support to drafts", url: "https://github.com/Mail-0/Zero/pull/1536", company: "Mail-0" },
+  { title: "feat: add rich text formatting toolbar", url: "https://github.com/Mail-0/Zero/pull/1563", company: "Mail-0" },
+  { title: "Add opacity to icons and fix separator colors in mail context menu", url: "https://github.com/Mail-0/Zero/pull/1296", company: "Mail-0" },
   { title: "fix(ui): chat section", url: "https://github.com/morphik-org/morphik-core/pull/199", company: "morphik-org" },
   { title: "fix(ui): the navigation sheet theme", url: "https://github.com/Mail-0/Zero/pull/1310", company: "Mail-0" },
   { title: "fix(email): ensure sender display name is correctly shown in outgoing emails", url: "https://github.com/Mail-0/Zero/pull/1312", company: "Mail-0" },
@@ -14,9 +18,9 @@ const contributions = [
   { title: "chore: set default mail category to default Value instead of null", url: "https://github.com/Mail-0/Zero/pull/1402", company: "Mail-0" },
   { title: "fix the details popover overflow", url: "https://github.com/Mail-0/Zero/pull/1436", company: "Mail-0" },
   { title: "resolve inconsistencies in translation usage", url: "https://github.com/Mail-0/Zero/pull/1499", company: "Mail-0" },
-  { title: "add attachments support to drafts", url: "https://github.com/Mail-0/Zero/pull/1536", company: "Mail-0" },
+ 
   { title: "fix thread popover opacity", url: "https://github.com/Mail-0/Zero/pull/1537", company: "Mail-0" },
-  { title: "feat: add rich text formatting toolbar", url: "https://github.com/Mail-0/Zero/pull/1563", company: "Mail-0" },
+  
 
   { title: "fix: no header in case of zero pdf", url: "http://github.com/morphik-org/morphik-core/pull/225", company: "morphik-org" },
   { title: "fix: prevent location input from losing focus after each key stroke", url: "https://github.com/calcom/cal.com/pull/22167", company: "calcom" },
