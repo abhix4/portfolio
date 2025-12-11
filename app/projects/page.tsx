@@ -1,6 +1,14 @@
 import ProjectCard from "../_components/ProjectCard";
 
 const dummy = [
+    {
+    title:"Git X 2025",
+    link:"https://ghwrap.vercel.app/",
+    url:"/assets/p.png",
+    desc:"GitHub Wrapped for 2025!",
+    git:"https://github.com/Abhiifour/VoteIt",
+    tech:"ReactJs • TailwindCSS • Firebase • Javascript "
+  },
   {
     title:"Vote it",
     link:"https://voteit.abhiifour.xyz",
