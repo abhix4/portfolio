@@ -1,6 +1,6 @@
-"use client"
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+'use client';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef, useEffect, useState } from 'react';
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -15,30 +15,30 @@ export default function Hero() {
   }, []);
 
   const fadeUpVariants = {
-    hidden: { 
+    hidden: {
       opacity: 0,
       y: 20,
-      filter: "blur(10px)"
+      filter: 'blur(10px)',
     },
-    visible: (i:any) => ({
+    visible: (i: any) => ({
       opacity: 1,
       y: 0,
-      filter: "blur(0px)",
+      filter: 'blur(0px)',
       transition: {
         duration: 0.8,
         delay: i * 0.15,
-        ease: [0.25, 0.4, 0.3, 1]
-      }
-    })
+        ease: [0.25, 0.4, 0.3, 1],
+      },
+    }),
   };
 
   return (
-    <motion.div 
+    <motion.div
       ref={containerRef}
       className="flex justify-start  font-Poppins   sm:mt-[20px]"
-      style={{ 
-        filter: isLoaded ? "none" : "blur(10px)",
-        transition: "filter 0.5s ease-out"
+      style={{
+        filter: isLoaded ? 'none' : 'blur(10px)',
+        transition: 'filter 0.5s ease-out',
       }}
     >
       <div className="flex flex-col items-center justify-center gap-4 text-neutral-100  sm:items-start sm:gap-2">
@@ -65,15 +65,18 @@ export default function Hero() {
               animate="visible"
               custom={1}
             >
-              A 21-year-old <strong>Programmer</strong> from India, crafting immersive web experiences.
-              Passionate about clean code, sleek design, and contributing to <strong>opensource</strong> projects. <br></br>
-
-              <span> Besides, I also investigate in artificial intelligence technologies.</span>
+              A 21-year-old <strong>Programmer</strong> from India, crafting
+              immersive web experiences. Passionate about clean code, sleek
+              design, and contributing to <strong>opensource</strong> projects.{' '}
+              <br></br>
+              <span>
+                {' '}
+                Besides, I also investigate in artificial intelligence
+                technologies.
+              </span>
               <br></br>
               <span>Let's create something extraordinary !</span>
             </motion.p>
-
-            
           </div>
 
           {/* good projects */}
