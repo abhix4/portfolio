@@ -8,7 +8,7 @@ export default function NavBar() {
     <div className="flex justify-between items-center text-neutral-400  pb-8 max-w-[600px]   ">
       {/* <OpenToWork/> */}
       <Image
-        src="/bug2.gif" // Make sure bug.gif is placed inside the public directory
+        src="/bug3.gif" // Make sure bug.gif is placed inside the public directory
         width={40}
         height={40}
         className="cursor-pointer"
