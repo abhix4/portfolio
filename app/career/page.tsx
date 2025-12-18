@@ -499,14 +499,40 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  '/antiwork.png',
-  '/cal.png',
-  '/zero.png',
-  '/morphik.png',
-  '/cap.png',
-  '/formsbrick.png',
-  '/openstatus.png',
-  '/keyshade.png',
+  {
+    url: '/antiwork.png',
+    link: 'https://github.com/antiwork'
+  },
+  {
+    url:'/cal.png',
+    link:'https://github.com/calcom'
+  }
+  ,
+  {
+    url: '/zero.png',
+    link:'https://github.com/Mail-0/Zero',
+  },
+  {
+    url: "/morphik.png",
+    link: 'https://github.com/morphik-org/morphik-core',
+  },
+  {
+    url:'/cap.png',
+    link:'https://github.com/CapSoftware/Cap'
+  },
+  {
+    url:'/formsbrick.png',
+    link:"https://github.com/formbricks/formbricks"
+  },
+  {
+    url:'/openstatus.png',
+    link:'https://github.com/openstatusHQ/openstatus'
+  },
+  {
+    url:'/keyshade.png',
+    link:'https://github.com/keyshade-xyz/keyshade'
+  }
+
 ];
 
 export default function CareersPage() {
@@ -520,17 +546,18 @@ export default function CareersPage() {
       </h1>
 
       <div className="flex flex-wrap justify-evenly items-center gap-6 mb-6 ">
-        {images.map((url, index) => (
+        {images.map((img, index) => (
+         <a href={img.link}    key={index}>
           <Image
-            src={url}
+            src={img.url}
             width={45}
             height={45}
-            key={index}
             className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
             alt="abhi-logo"
             loading="eager"
             draggable={false}
           />
+         </a>
         ))}
       </div>
 
