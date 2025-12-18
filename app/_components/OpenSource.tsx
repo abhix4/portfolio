@@ -12,8 +12,8 @@ export default function Opensource({
 }) {
   return (
     <div className="flex justify-between items-start text-neutral-400 px-4 py-4 rounded-lg bg-bg-color-gray sm:items-start">
-      <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-center">
-        <BiGitPullRequest size={16} />
+      <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-start ">
+        <BiGitPullRequest size={16} className="mt-1" />
         <div>
           <h1 className=" text-white text-sm hover:underline">
             <a href={url}>{title}</a>

@@ -9,8 +9,8 @@ export default function NavBar() {
       {/* <OpenToWork/> */}
       <Image
         src="/bug3.gif" // Make sure bug.gif is placed inside the public directory
-        width={40}
-        height={40}
+        width={50}
+        height={50}
         className="cursor-pointer"
         onClick={() => router.push('/')}
         alt="abhi-logo"

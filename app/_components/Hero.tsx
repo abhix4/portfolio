@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <motion.div
       ref={containerRef}
-      className="flex justify-start  font-Poppins   sm:mt-[20px]"
+      className="flex justify-start font-Poppins sm:mt-[20px]"
       style={{
         filter: isLoaded ? 'none' : 'blur(10px)',
         transition: 'filter 0.5s ease-out',

@@ -2,8 +2,238 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import CareerCard from '../_components/CareerCard';
 import Opensource from '../_components/OpenSource';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 const contributions = [
+  // antiwork / gumroad
+  {
+    title: 'fix: seller default subscribe section',
+    url: 'https://github.com/antiwork/gumroad/pull/1329',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: tooltip screen overflow at product share',
+    url: 'https://github.com/antiwork/gumroad/pull/1336',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: hide search icon when no discount available',
+    url: 'https://github.com/antiwork/gumroad/pull/1187',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: hide search icon when no products available',
+    url: 'https://github.com/antiwork/gumroad/pull/1186',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: loading spinner on followers page',
+    url: 'https://github.com/antiwork/gumroad/pull/1142',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: remove extra dot at checkout page',
+    url: 'https://github.com/antiwork/gumroad/pull/1115',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: pricing page section',
+    url: 'https://github.com/antiwork/gumroad/pull/1340',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: removed redundant back button',
+    url: 'https://github.com/antiwork/gumroad/pull/1339',
+    company: 'antiwork',
+  },
+
+  // antiwork / gumboard
+  {
+    title: 'fix: right margin for profile dropdown',
+    url: 'https://github.com/antiwork/gumboard/pull/790',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: navbar layout on boards (small screens)',
+    url: 'https://github.com/antiwork/gumboard/pull/782',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: replace input with textarea',
+    url: 'https://github.com/antiwork/gumboard/pull/771',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: hide previous days in calendar on invite links',
+    url: 'https://github.com/antiwork/gumboard/pull/769',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: textarea for new board description',
+    url: 'https://github.com/antiwork/gumboard/pull/744',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: switch dimensions and color',
+    url: 'https://github.com/antiwork/gumboard/pull/743',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: replace board description input with textarea',
+    url: 'https://github.com/antiwork/gumboard/pull/742',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: move close button to dialog header',
+    url: 'https://github.com/antiwork/gumboard/pull/741',
+    company: 'antiwork',
+  },
+  {
+    title: 'feat: optimistic update for archive and unarchive',
+    url: 'https://github.com/antiwork/gumboard/pull/705',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix(e2e): note filter failing for future dates',
+    url: 'https://github.com/antiwork/gumboard/pull/823',
+    company: 'antiwork',
+  },
+
+  // antiwork / flexile
+  {
+    title: 'fix: tabs section padding on people page',
+    url: 'https://github.com/antiwork/flexile/pull/1114',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: dialog close button on small screens',
+    url: 'https://github.com/antiwork/flexile/pull/1103',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: settings page layout on small screens',
+    url: 'https://github.com/antiwork/flexile/pull/1101',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: improve invoice page responsiveness',
+    url: 'https://github.com/antiwork/flexile/pull/1095',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: invoice page footer',
+    url: 'https://github.com/antiwork/flexile/pull/1340',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: rejection flow',
+    url: 'https://github.com/antiwork/flexile/pull/1311',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: selected toolbar highlight',
+    url: 'https://github.com/antiwork/flexile/pull/1304',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: restrict EIN number length',
+    url: 'https://github.com/antiwork/flexile/pull/1282',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: rich text editor issues',
+    url: 'https://github.com/antiwork/flexile/pull/1281',
+    company: 'antiwork',
+  },
+
+  // antiwork / gumroad refactors
+  {
+    title: 'refactor: migrate ShareSection inline css to tailwind',
+    url: 'https://github.com/antiwork/gumroad/pull/1496',
+    company: 'antiwork',
+  },
+  {
+    title: 'refactor: migrate search discover page styles to tailwind',
+    url: 'https://github.com/antiwork/gumroad/pull/1480',
+    company: 'antiwork',
+  },
+  {
+    title: 'refactor: migrate bundle edit share tab styles',
+    url: 'https://github.com/antiwork/gumroad/pull/1479',
+    company: 'antiwork',
+  },
+  {
+    title: 'refactor: migrate upsell select modal styles',
+    url: 'https://github.com/antiwork/gumroad/pull/1477',
+    company: 'antiwork',
+  },
+  {
+    title: 'refactor: review component inline css to tailwind',
+    url: 'https://github.com/antiwork/gumroad/pull/1475',
+    company: 'antiwork',
+  },
+  {
+    title: 'fix: loader alignment on blog post page',
+    url: 'https://github.com/antiwork/gumroad/pull/1468',
+    company: 'antiwork',
+  },
+  {
+    title: 'chore: migrate rating scss to tailwind',
+    url: 'https://github.com/antiwork/gumroad/pull/1421',
+    company: 'antiwork',
+  },
+
+  // cal.com
+  {
+    title: 'fix: code persists on dialog outside click',
+    url: 'https://github.com/calcom/cal.com/pull/25870',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: popover iOS issue',
+    url: 'https://github.com/calcom/cal.com/pull/25696',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: data table toolbar styling',
+    url: 'https://github.com/calcom/cal.com/pull/25632',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: vertical tab spacing',
+    url: 'https://github.com/calcom/cal.com/pull/25612',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: date picker content render issue',
+    url: 'https://github.com/calcom/cal.com/pull/25584',
+    company: 'calcom',
+  },
+  {
+    title: 'fix(ui): api keys code alignment',
+    url: 'https://github.com/calcom/cal.com/pull/25570',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: availability settings styling override',
+    url: 'https://github.com/calcom/cal.com/pull/25521',
+    company: 'calcom',
+  },
+  {
+    title: 'fix: availability CTA hover state',
+    url: 'https://github.com/calcom/cal.com/pull/25504',
+    company: 'calcom',
+  },
+  {
+    title: 'fix(ui): missing checked state for event type checkbox',
+    url: 'https://github.com/calcom/cal.com/pull/25478',
+    company: 'calcom',
+  },
+  {
+    title: 'fix(validation): disallow whitespace-only team names',
+    url: 'https://github.com/calcom/cal.com/pull/25467',
+    company: 'calcom',
+  },
   {
     title: 'fix: regex and id extraction for giphy media urls ',
     url: 'https://github.com/calcom/cal.com/pull/22276',
@@ -268,12 +498,41 @@ export const metadata: Metadata = {
   },
 };
 
+const images = [
+  '/antiwork.png',
+  '/cal.png',
+  '/zero.png',
+  '/morphik.png',
+  '/cap.png',
+  '/formsbrick.png',
+  '/openstatus.png',
+  '/keyshade.png',
+];
+
 export default function CareersPage() {
+  // const router = useRouter();
   return (
     <div>
       <h1 className="text-white text-xl mb-6">Career timeline</h1>
       <CareerCard />
-      <h1 className="text-white text-xl py-6">OSS Contributions</h1>
+      <h1 className="text-white text-xl py-6">
+        OSS Contributions <span></span>
+      </h1>
+
+      <div className="flex flex-wrap justify-evenly items-center gap-6 mb-6 ">
+        {images.map((url, index) => (
+          <Image
+            src={url}
+            width={45}
+            height={45}
+            key={index}
+            className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
+            alt="abhi-logo"
+            loading="eager"
+            draggable={false}
+          />
+        ))}
+      </div>
 
       <ScrollArea className="max-h-[400px]  flex flex-col w-full">
         <div className=" flex flex-col gap-2">
