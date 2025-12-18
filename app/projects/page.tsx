@@ -112,7 +112,7 @@ export default function ProjectsPage() {
     <div>
       <h1 className="text-white text-xl">Projects</h1>
       <div>
-        <div className="flex flex-col gap-6 mt-[30px] ">
+        <div className="flex flex-col gap-3 mt-[30px] ">
           {dummy.map((x: any, i: number) => (
             <ProjectCard
               key={i}
