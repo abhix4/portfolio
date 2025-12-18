@@ -484,7 +484,7 @@ export const metadata: Metadata = {
     siteName: "Abhishek's Portfolio",
     images: [
       {
-        url: 'https://i.abhiifour.xyz/oss.png', // put your image in /public and use /og-image.png
+        url: 'https://i.abhiifour.xyz/ossv1.png', // put your image in /public and use /og-image.png
         width: 1200,
         height: 630,
         alt: 'Abhishek OSS Contributions',
@@ -494,7 +494,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/oss.png'],
+    images: ['/ossv1.png'],
   },
 };
 
