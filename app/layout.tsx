@@ -22,13 +22,21 @@ export const metadata: Metadata = {
     'Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨',
   openGraph: {
     siteName: "Abhishek's Portfolio",
-    images: ['/ossv1.png'],
+    images: [
+      {
+        url: 'https://i.abhiifour.xyz/ossv1.png?v=2',
+        width: 1200,
+        height: 630,
+        alt: 'Abhishek Portfolio OG Image',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/ossv1.png'],
+    images: ['https://i.abhiifour.xyz/ossv1.png?v=2'],
   },
 };
+
 
 export default function RootLayout({
   children,
