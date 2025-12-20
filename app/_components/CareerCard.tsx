@@ -21,6 +21,7 @@ export default function CareerCard() {
             alt="company-logo"
             loading="eager"
             className=""
+            priority
             draggable={false}
           />
           <p className="text-sm">Buildrappo</p>

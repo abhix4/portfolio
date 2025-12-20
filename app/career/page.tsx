@@ -552,6 +552,7 @@ export default function CareersPage() {
               src={img.url}
               width={45}
               height={45}
+              priority
               className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
               alt="abhi-logo"
               loading="eager"
