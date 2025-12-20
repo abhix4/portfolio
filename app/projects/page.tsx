@@ -110,7 +110,8 @@ const dummy = [
 export default function ProjectsPage() {
   return (
     <div>
-      <h1 className="text-white text-xl">Projects</h1>
+      <h1 className="text-white text-lg uppercase">Works</h1>
+      {/* <p className="text-neutral-400 text-sm">Some of my works</p> */}
       <div>
         <div className="flex flex-col gap-3 mt-[30px] ">
           {dummy.map((x: any, i: number) => (

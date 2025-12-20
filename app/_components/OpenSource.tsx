@@ -11,7 +11,7 @@ export default function Opensource({
   url: string;
 }) {
   return (
-    <div className="flex justify-between items-start text-neutral-400 px-4 py-4 rounded-lg bg-bg-color-gray sm:items-start">
+    <div className="flex justify-between items-start text-neutral-400 px-4 py-4 rounded-lg bg-bg-color-gray sm:items-start border border-gray-400/5 ">
       <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-start ">
         <BiGitPullRequest size={16} className="mt-1" />
         <div>

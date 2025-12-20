@@ -23,7 +23,7 @@ export default function NavBar() {
           className="cursor-pointer hover:text-white text-sm"
           onClick={() => router.push('/projects')}
         >
-          Projects
+          Works
         </p>
         <p
           className="cursor-pointer hover:text-white text-sm"

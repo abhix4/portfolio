@@ -21,7 +21,7 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      className="bg-bg-color-gray rounded-lg px-4 py-4"
+      className="bg-bg-color-gray rounded-lg px-4 py-4 border border-gray-400/5 "
       initial={{ opacity: 0, y: 20 }}
       whileInView={{
         opacity: 1,
@@ -72,7 +72,7 @@ export default function ProjectCard({
         >
           {link ? (
             <motion.span
-              className="underline underline-offset-2"
+              className=" underline-offset-2"
               whileHover={{ opacity: 0.8 }}
               transition={{ duration: 0.2 }}
             >

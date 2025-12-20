@@ -82,7 +82,7 @@
     --radius: 0.5rem;
   }
   ::selection {
-    background-color: #FFC126;
+    background-color: #ffc126;
     color: #151513;
   }
   .dark {

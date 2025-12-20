@@ -58,24 +58,26 @@ export default function Hero() {
           </motion.h1>
 
           {/* Bio sections */}
-          <div className="text-start text-sm    sm:text-start  space-y-4 text-neutral-400 sm:mt-2">
+          <div className="text-start text-sm sm:text-start space-y-4 text-neutral-400 sm:mt-2">
             <motion.p
               variants={fadeUpVariants}
               initial="hidden"
               animate="visible"
               custom={1}
+              className="leading-24"
             >
-              A 21-year-old <strong>Programmer</strong> from India, crafting
-              immersive web experiences. Passionate about clean code, sleek
-              design, and contributing to <strong>opensource</strong> projects.{' '}
-              <br></br>
+              A 21-year-old <strong>Programmer</strong> from India{' '}
+              <span className="mx-1 text-md">🇮🇳</span>, Building software with a
+              focus on design, detail, and function. Passionate about clean
+              code, sleek design, and contributing to{' '}
+              <strong>opensource</strong> projects. <br></br>
               <span>
                 {' '}
                 Besides, I also investigate in artificial intelligence
                 technologies.
               </span>
               <br></br>
-              <span>Let's create something extraordinary !</span>
+              <span className="">Let's create something extraordinary !</span>
             </motion.p>
           </div>
 

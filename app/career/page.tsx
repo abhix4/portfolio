@@ -501,63 +501,63 @@ export const metadata: Metadata = {
 const images = [
   {
     url: '/antiwork.png',
-    link: 'https://github.com/antiwork'
+    link: 'https://github.com/antiwork',
   },
   {
-    url:'/cal.png',
-    link:'https://github.com/calcom'
-  }
-  ,
+    url: '/cal.png',
+    link: 'https://github.com/calcom',
+  },
   {
     url: '/zero.png',
-    link:'https://github.com/Mail-0/Zero',
+    link: 'https://github.com/Mail-0/Zero',
   },
   {
-    url: "/morphik.png",
+    url: '/morphik.png',
     link: 'https://github.com/morphik-org/morphik-core',
   },
   {
-    url:'/cap.png',
-    link:'https://github.com/CapSoftware/Cap'
+    url: '/cap.png',
+    link: 'https://github.com/CapSoftware/Cap',
   },
   {
-    url:'/formsbrick.png',
-    link:"https://github.com/formbricks/formbricks"
+    url: '/formsbrick.png',
+    link: 'https://github.com/formbricks/formbricks',
   },
   {
-    url:'/openstatus.png',
-    link:'https://github.com/openstatusHQ/openstatus'
+    url: '/openstatus.png',
+    link: 'https://github.com/openstatusHQ/openstatus',
   },
   {
-    url:'/keyshade.png',
-    link:'https://github.com/keyshade-xyz/keyshade'
-  }
-
+    url: '/keyshade.png',
+    link: 'https://github.com/keyshade-xyz/keyshade',
+  },
 ];
 
 export default function CareersPage() {
   // const router = useRouter();
   return (
     <div>
-      <h1 className="text-white text-xl mb-6">Career timeline</h1>
+      <h1 className="text-white text-lg mb-6 uppercase tracking-tight">
+        Experience
+      </h1>
       <CareerCard />
-      <h1 className="text-white text-xl py-6">
+      <h1 className="text-white text-lg py-6 uppercase tracking-tight">
         OSS Contributions <span></span>
       </h1>
 
-      <div className="flex flex-wrap justify-evenly items-center gap-6 mb-6 ">
+      <div className="flex flex-wrap justify-center lg:justify-evenly items-center gap-6 mb-6 ">
         {images.map((img, index) => (
-         <a href={img.link}    key={index}>
-          <Image
-            src={img.url}
-            width={45}
-            height={45}
-            className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
-            alt="abhi-logo"
-            loading="eager"
-            draggable={false}
-          />
-         </a>
+          <a href={img.link} key={index}>
+            <Image
+              src={img.url}
+              width={45}
+              height={45}
+              className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
+              alt="abhi-logo"
+              loading="eager"
+              draggable={false}
+            />
+          </a>
         ))}
       </div>
 
