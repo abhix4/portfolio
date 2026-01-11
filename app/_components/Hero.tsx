@@ -101,7 +101,7 @@ export default function Hero() {
       custom={6}
       >
         <h2 className="text-lg mb-6 uppercase tracking-tight font-mono text-neutral-800">
-          Experience
+          Worked at
         </h2>
         <CareerCard />
         <h1 className="text-lg py-6 uppercase tracking-tight font-mono text-neutral-800">
