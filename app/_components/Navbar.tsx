@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function NavBar() {
   const router = useRouter();
   return (
-    <div className="flex justify-between items-end pb-8 max-w-[600px]   ">
+    <div className="flex justify-between items-end pb-8 max-w-[600px]">
       <Image
         src="/header.gif"
         width={200}
@@ -15,6 +15,8 @@ export default function NavBar() {
         alt="abhi-logo"
         loading="eager"
         draggable={false}
+        unoptimized
+        priority
       />
     </div>
   );
