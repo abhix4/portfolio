@@ -79,7 +79,7 @@ export default function ProjectCard({
         </motion.div>
 
         <motion.p
-          className=" text-xs text-neutral-500 font-mono"
+          className=" text-sm text-neutral-500 font-mono"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

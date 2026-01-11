@@ -504,6 +504,14 @@ export const images = [
 ];
 
 export const projects = [
+    {
+    title: 'bondify.art',
+    link: 'https://bondify.art/',
+    url: '/assets/p.png',
+    desc: 'Free marriage biodata tool',
+    git: 'https://github.com/Abhiifour/VoteIt',
+    tech: 'ReactJs • TailwindCSS • Firebase • Javascript ',
+  },
   {
     title: 'Git X 2025',
     link: 'https://ghwrap.vercel.app/',

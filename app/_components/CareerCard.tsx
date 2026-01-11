@@ -7,7 +7,7 @@ export default function CareerCard() {
         Feb 2025 - April 2025
       </p>
       <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-center">
-        <div className="flex items-center gap-2">
+        <div className="flex lg:flex-row flex-col items-start lg:items-center gap-2">
           <p className="text-sm font-mono ">Software engineer intern at </p>
           <Image
             src="/rappo.svg"

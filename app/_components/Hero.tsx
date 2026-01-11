@@ -94,7 +94,12 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div>
+      <motion.div
+      variants={fadeUpVariants}
+      initial="hidden"
+      animate="visible"
+      custom={6}
+      >
         <h2 className="text-lg mb-6 uppercase tracking-tight font-mono text-neutral-800">
           Experience
         </h2>
@@ -120,7 +125,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <ScrollArea className="max-h-[300px]  flex flex-col w-full">
+        <ScrollArea className="max-h-[300px] mt-12 flex flex-col w-full">
           <div className=" flex flex-col">
             {contributions.map((contribution, index) => (
               <Opensource
@@ -132,7 +137,7 @@ export default function Hero() {
             ))}
           </div>
         </ScrollArea>
-      </div>
+      </motion.div>
 
       <div>
         <a

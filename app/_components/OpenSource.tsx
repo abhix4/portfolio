@@ -13,10 +13,10 @@ export default function Opensource({
   return (
     <div className="flex justify-between items-start relative py-4 sm:items-start ">
       <div className="w-[1px] h-[100%] bg-neutral-200 absolute left-1.5 -translate-y-4 "></div>
-      <div className="flex sm:flex-col  gap-3 sm:gap-2 sm:items-start items-start ">
+      <div className="flex   gap-3 sm:gap-2 sm:items-start items-start ">
         <BiGitPullRequest size={16} className="mt-1 text-neutral-600" />
 
-        <div>
+        <div className=''>
           <p className="font-mono text-sm hover:underline text-neutral-800">
             <a href={url}>{title}</a>
           </p>

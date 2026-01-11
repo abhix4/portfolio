@@ -1,5 +1,6 @@
 import { projects } from '@/constants';
 import ProjectCard from '../_components/ProjectCard';
+import Footer from '../_components/Footer';
 
 export default function ProjectsPage() {
   return (
@@ -24,6 +25,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
