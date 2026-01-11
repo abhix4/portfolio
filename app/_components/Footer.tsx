@@ -37,7 +37,7 @@ export default function Footer() {
         src="/greeting.gif"
         width={400}
         height={30}
-        className="cursor-pointer bg-cover  mx-auto"
+        className="cursor-pointer pointer-events-none bg-cover  mx-auto"
         alt="abhi-logo"
         loading="eager"
         draggable={false}

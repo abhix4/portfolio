@@ -105,7 +105,7 @@ export default function Hero() {
         </h2>
         <CareerCard />
         <h1 className="text-lg py-6 uppercase tracking-tight font-mono text-neutral-800">
-          OSS Contributions <span></span>
+          <a href="/opensource" className=''>OSS Contributions <span className="text-xs">[More]</span></a>
         </h1>
 
         <div className="flex flex-wrap justify-start items-center gap-2 mb-6 ">

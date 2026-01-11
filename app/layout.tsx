@@ -14,10 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Abhishek | Portfolio',
-    template: '%s | Abhishek',
-  },
+  title:  'Abhishek | Portfolio',
   description:
     'Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨',
   openGraph: {

@@ -4,12 +4,13 @@ import Opensource from '../_components/OpenSource';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { images, contributions } from '@/constants';
+import Footer from '../_components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Abhishek | OSS Contributions',
+  title: 'Abhishek | Contributions',
   description: 'My open-source contributions and journey.',
   openGraph: {
-    title: 'Abhishek | OSS Contributions',
+    title: 'Abhishek | Contributions',
     description: 'Explore my open-source journey and contributions.',
     url: 'https://i.abhiifour.xyz/career',
     siteName: "Abhishek's Portfolio",
@@ -32,10 +33,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <div>
-      <h1 className="text-lg mb-6 uppercase tracking-tight font-mono">
-        Experience
-      </h1>
-      <CareerCard />
+  
       <h1 className="text-lg py-6 uppercase tracking-tight font-mono">
         OSS Contributions <span></span>
       </h1>
@@ -57,8 +55,8 @@ export default function CareersPage() {
         ))}
       </div>
 
-      <ScrollArea className="max-h-[400px]  flex flex-col w-full">
-        <div className=" flex flex-col gap-2">
+ 
+        <div className="relative flex flex-col mt-12 py-5">
           {contributions.map((contribution, index) => (
             <Opensource
               key={index}
@@ -67,8 +65,11 @@ export default function CareersPage() {
               url={contribution.url}
             />
           ))}
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-neutral-100 to-transparent"></div>
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-neutral-100 to-transparent"></div>
         </div>
-      </ScrollArea>
+   
+      <Footer/>
     </div>
   );
 }

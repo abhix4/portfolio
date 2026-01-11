@@ -10,7 +10,7 @@ export default function NavBar() {
         src="/header.gif"
         width={200}
         height={50}
-        className="cursor-pointer bg-cover"
+        className="cursor-pointer bg-cover -translate-x-1.5"
         onClick={() => router.push('/')}
         alt="abhi-logo"
         loading="eager"
