@@ -44,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${geistMono.variable}`}>
-      <body className="antialiased bg-neutral-100 pb-40 sm:py-10 max-w-[600px] mx-auto sm:px-6">
+      <body className="antialiased bg-neutral-100 pb-40  max-w-[600px] mx-auto sm:px-6">
         <NavBar />
         {children}
       </body>

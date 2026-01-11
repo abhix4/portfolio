@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { ArrowUpRightIcon } from './svgs/next';
 
 export default function ProjectCard({
   url,
@@ -21,7 +22,7 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      className=" rounded-sm px-4 py-4 border border-gray-200 "
+      className=" py-2  "
       initial={{ opacity: 0, y: 20 }}
       whileInView={{
         opacity: 1,
@@ -52,27 +53,33 @@ export default function ProjectCard({
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           {link ? (
-            <motion.span
-              className=" underline-offset-2 text-neutral-800 underline"
+            <motion.div
+              className=" underline-offset-2 text-neutral-800 underline "
               whileHover={{ opacity: 0.8 }}
               transition={{ duration: 0.2 }}
             >
-              <a href={link}>{title} </a>
-            </motion.span>
+              <a href={link} className="flex group h-1 ">
+                {title}{' '}
+                <ArrowUpRightIcon
+                  size={14}
+                  className="hidden group-hover:block transition-all duration-500 ease-in"
+                />{' '}
+              </a>
+            </motion.div>
           ) : (
-            <motion.span
+            <motion.div
               className="underline-offset-2 text-neutral-800 underline"
               whileHover={{ opacity: 0.8 }}
               transition={{ duration: 0.2 }}
             >
               <a href={git}>{title} </a>
-            </motion.span>
+            </motion.div>
           )}
           <br />
         </motion.div>
 
         <motion.p
-          className=" text-xs text-neutral-500  font-mono"
+          className=" text-xs text-neutral-500 font-mono"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

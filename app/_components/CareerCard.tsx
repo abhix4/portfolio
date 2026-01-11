@@ -19,7 +19,9 @@ export default function CareerCard() {
             priority
             draggable={false}
           />
-          <a className="text-sm font-mono" href='https://buildrappo.com'>Buildrappo</a>
+          <a className="text-sm font-mono" href="https://buildrappo.com">
+            Buildrappo
+          </a>
         </div>
       </div>
     </div>

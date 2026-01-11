@@ -135,7 +135,10 @@ export default function Hero() {
       </div>
 
       <div>
-        <a className="text-lg uppercase font-mono text-neutral-800" href='/projects'>
+        <a
+          className="text-lg uppercase font-mono text-neutral-800"
+          href="/projects"
+        >
           Projects <span className="text-xs">[more]</span>
         </a>
 
