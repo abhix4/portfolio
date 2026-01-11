@@ -5,33 +5,17 @@ import Image from 'next/image';
 export default function NavBar() {
   const router = useRouter();
   return (
-    <div className="flex justify-between items-center text-neutral-400  pb-8 max-w-[600px]   ">
-      {/* <OpenToWork/> */}
+    <div className="flex justify-between items-end pb-8 max-w-[600px]   ">
       <Image
-        src="/bug3.gif" // Make sure bug.gif is placed inside the public directory
-        width={50}
+        src="/header.gif"
+        width={200}
         height={50}
-        className="cursor-pointer"
+        className="cursor-pointer bg-cover"
         onClick={() => router.push('/')}
         alt="abhi-logo"
         loading="eager"
         draggable={false}
       />
-
-      <div className="flex gap-4 ">
-        <p
-          className="cursor-pointer hover:text-white text-sm"
-          onClick={() => router.push('/projects')}
-        >
-          Works
-        </p>
-        <p
-          className="cursor-pointer hover:text-white text-sm"
-          onClick={() => router.push('/career')}
-        >
-          Timeline
-        </p>
-      </div>
     </div>
   );
 }

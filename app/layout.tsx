@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
 import NavBar from './_components/Navbar';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
   subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
   subsets: ['latin'],
+  variable: '--font-mono',
 });
 
 export const metadata: Metadata = {
@@ -39,14 +39,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  py-[50px] bg-[#141515] font-Poppins  sm:py-10 max-w-[600px] mx-auto  sm:px-6`}
-      >
+    <html lang="en" className={`${inter.variable} ${geistMono.variable}`}>
+      <body className="antialiased bg-neutral-100 pb-40 sm:py-10 max-w-[600px] mx-auto sm:px-6">
         <NavBar />
         {children}
       </body>

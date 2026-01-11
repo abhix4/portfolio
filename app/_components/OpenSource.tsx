@@ -11,20 +11,18 @@ export default function Opensource({
   url: string;
 }) {
   return (
-    <div className="flex justify-between items-start text-neutral-400 px-4 py-4 rounded-lg bg-bg-color-gray sm:items-start border border-gray-400/5 ">
-      <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-start ">
-        <BiGitPullRequest size={16} className="mt-1" />
+    <div className="flex justify-between items-start relative py-4 sm:items-start ">
+      <div className="w-[1px] h-[100%] bg-neutral-200 absolute left-1.5 -translate-y-4 "></div>
+      <div className="flex sm:flex-col  gap-3 sm:gap-2 sm:items-start items-start ">
+        <BiGitPullRequest size={16} className="mt-1 text-neutral-600" />
+
         <div>
-          <h1 className=" text-white text-sm hover:underline">
+          <p className="font-mono text-sm hover:underline text-neutral-800">
             <a href={url}>{title}</a>
-          </h1>
-          <p className="text-xs">{company}</p>
+          </p>
+          <p className="text-xs font-mono text-neutral-500">{company}</p>
         </div>
       </div>
-
-      {/* <p className="text-xs">
-        feb 2025 - april 2025
-        </p> */}
     </div>
   );
 }

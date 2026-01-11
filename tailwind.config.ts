@@ -55,7 +55,8 @@ export default {
         },
       },
       fontFamily: {
-        Poppins: ['Poppins'],
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-mono)'],
       },
       screens: {
         lg: '1024px',

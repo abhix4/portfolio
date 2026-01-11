@@ -26,47 +26,38 @@ export default function Footer() {
 
   return (
     <motion.div
-      className="flex flex-col justify-center items-start gap-8  font-Poppins sm:gap-4 mt-8"
+      className="flex flex-col justify-center items-start gap-8 sm:gap-4 mt-32"
       variants={fadeUpVariants}
       initial="hidden"
       animate="visible"
       custom={1}
     >
-      {/* <div> E-mail : <a href="mailto:abhiifour@gmail.com" className="underline">abhiifour@gmail.com.</a></div> */}
-      <div className="text-white flex gap-4 text-sm ">
-        <div className=" hover:text-neutral-500">
+      <div className="flex justify-between text-sm w-full">
+        <div className=" flex gap-4 ">
           <a href="https://x.com/abhiix4" className="flex gap-1 items-center">
-            <FaXTwitter className="cursor-pointer" />{' '}
-            <p className="text-xs">Twitter</p>
+            <FaXTwitter className="cursor-pointer text-neutral-600" />{' '}
+            <p className="text-xs text-neutral-500  font-mono">[Twitter]</p>
           </a>
-        </div>
-        <div className=" hover:text-neutral-500">
+       
           <a
             href="https://github.com/abhix4"
             className="flex gap-1 items-center"
           >
-            <FaGithub className="cursor-pointer" />{' '}
-            <p className="text-xs ">Github</p>
+            <FaGithub className="cursor-pointer text-neutral-600" />{' '}
+            <p className="text-xs text-neutral-500 font-mono">[Github]</p>
           </a>
-        </div>
-        <div className=" hover:text-neutral-500">
+      
           <a
             href="mailto:abhiifour@gmail.com"
             className="flex gap-1 items-center"
           >
-            <IoMail className="cursor-pointer" />{' '}
-            <p className="text-xs ">Email</p>
+            <IoMail className="cursor-pointer text-neutral-600" />{' '}
+            <p className="text-xs  text-neutral-500 font-mono">[Email]</p>
           </a>
         </div>
-        {/* <div className="hover:bg-white p-2 rounded-full hover:text-black">
-            <IoEarth  className="cursor-pointer" />
-            </div>
-           */}
-      </div>
 
-      {/* <div className="text-[16px] text-my-gray sm:text-[12px] sm:w-[80%] sm:text-center">
-            ©Abhishek Singh 2025 •
-            </div> */}
+        <p className='text-xs  text-neutral-400 font-mono ml-auto'>Last updated on 1/1/2026</p>
+      </div>
     </motion.div>
   );
 }
