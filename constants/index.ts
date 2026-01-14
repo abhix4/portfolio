@@ -522,7 +522,7 @@ export const projects = [
   },
   {
     title: 'Vote it',
-    link: 'https://voteit.abhiifour.xyz',
+    link: 'https://voteit.abhii.space',
     url: '/assets/p.png',
     desc: 'A dynamic web application enabling users to create and participate in polls seamlessly',
     git: 'https://github.com/Abhiifour/VoteIt',
@@ -530,7 +530,7 @@ export const projects = [
   },
   {
     title: 'Idea Vault',
-    link: 'https://ideavault.abhiifour.xyz',
+    link: 'https://ideavault.abhii.space',
     url: '/assets/p1.png',
     desc: 'A simple and intuitive application designed for users to store, organize, and manage their thoughts effectively',
     git: 'https://github.com/Abhiifour/ideaVault',
@@ -538,7 +538,7 @@ export const projects = [
   },
   {
     title: 'Panchayat',
-    link: 'https://panchayat.abhiifour.xyz',
+    link: 'https://panchayat.abhii.space',
     url: '/assets/p1.png',
     desc: 'A minimal and intuitive chat application',
     git: 'https://github.com/Abhiifour/ideaVault',
@@ -554,7 +554,7 @@ export const projects = [
   },
   {
     title: 'Better Track',
-    link: 'https://trackbetter.abhiifour.xyz',
+    link: 'https://trackbetter.abhii.space',
     url: '/assets/p4.png',
     desc: 'A platform to track and monitor your favourite open source organisation',
     git: 'https://github.com/Abhiifour/Task-app',
@@ -568,14 +568,7 @@ export const projects = [
     git: 'https://github.com/Abhiifour/wisdom',
     tech: 'NextJs • TailwindCSS • Prisma • PostgressSQL • Framer • Typescript • Typescript',
   },
-  {
-    title: 'Bio Data',
-    link: 'https://biodata.abhiifour.xyz/',
-    url: '/assets/p3.png',
-    desc: 'A simple and free bio data generator',
-    git: 'https://github.com/Abhiifour/social-media',
-    tech: 'ReactJs • TailwindCSS • NodeJs • MongoDB • ExpressJs • Cloudinary • Javascript ',
-  },
+
   {
     title: 'Crazy Ones',
     link: 'https://quote-seven-alpha.vercel.app/',
