@@ -139,7 +139,12 @@ export default function Hero() {
         </ScrollArea>
       </motion.div>
 
-      <div>
+      <motion.div
+       variants={fadeUpVariants}
+      initial="hidden"
+      animate="visible"
+      custom={7}
+      >
         <a
           className="text-lg uppercase font-mono text-neutral-800"
           href="/projects"
@@ -163,7 +168,7 @@ export default function Hero() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
