@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
 import NavBar from './_components/Navbar';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:  'Abhishek | Portfolio',
+  title: 'Abhishek | Portfolio',
   description:
     'Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨',
   openGraph: {
@@ -46,7 +46,7 @@ export default function RootLayout({
         <NavBar />
         {children}
       </body>
-      <Analytics/>
+      <Analytics />
     </html>
   );
 }

@@ -504,7 +504,7 @@ export const images = [
 ];
 
 export const projects = [
-    {
+  {
     title: 'bondify.art',
     link: 'https://bondify.art/',
     url: '/assets/p.png',

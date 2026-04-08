@@ -16,7 +16,7 @@ export default function Opensource({
       <div className="flex   gap-3 sm:gap-2 sm:items-start items-start ">
         <BiGitPullRequest size={16} className="mt-1 text-neutral-600 z-20" />
 
-        <div className=''>
+        <div className="">
           <p className="font-mono text-sm hover:underline text-neutral-800">
             <a href={url}>{title}</a>
           </p>

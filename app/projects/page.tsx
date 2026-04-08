@@ -4,9 +4,8 @@ import Footer from '../_components/Footer';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title:  'Abhishek | Projects',
-  description:
-    'Collection of all Projects🚀✨',
+  title: 'Abhishek | Projects',
+  description: 'Collection of all Projects🚀✨',
   openGraph: {
     siteName: "Abhishek's Projects",
     images: [
@@ -47,7 +46,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -33,7 +33,6 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <div>
-  
       <h1 className="text-lg py-6 uppercase tracking-tight font-mono">
         OSS Contributions <span></span>
       </h1>
@@ -55,21 +54,20 @@ export default function CareersPage() {
         ))}
       </div>
 
- 
-        <div className="relative flex flex-col mt-12 py-5">
-          {contributions.map((contribution, index) => (
-            <Opensource
-              key={index}
-              title={contribution.title}
-              company={contribution.company}
-              url={contribution.url}
-            />
-          ))}
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-neutral-100 to-transparent"></div>
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-neutral-100 to-transparent"></div>
-        </div>
-   
-      <Footer/>
+      <div className="relative flex flex-col mt-12 py-5">
+        {contributions.map((contribution, index) => (
+          <Opensource
+            key={index}
+            title={contribution.title}
+            company={contribution.company}
+            url={contribution.url}
+          />
+        ))}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-neutral-100 to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-neutral-100 to-transparent"></div>
+      </div>
+
+      <Footer />
     </div>
   );
 }
