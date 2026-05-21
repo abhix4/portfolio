@@ -27,7 +27,7 @@ export default function ProjectsPage() {
   return (
     <div>
       <h1 className="text-lg uppercase font-mono text-neutral-800">
-        /Projects
+        Projects
       </h1>
 
       <div>

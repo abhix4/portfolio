@@ -513,6 +513,14 @@ export const projects = [
     tech: 'ReactJs • TailwindCSS • Firebase • Javascript ',
   },
   {
+    title: 'Stroke',
+    link: 'https://stroke.abhii.space',
+    url: '/assets/p.png',
+    desc: 'Create Hand-drawn SVG animations for logos, signatures, and illustrations.',
+    git: 'https://github.com/Abhiifour/stroke',
+    tech: 'ReactJs • TailwindCSS • Firebase • Javascript ',
+  },
+  {
     title: 'Git X 2025',
     link: 'https://ghwrap.vercel.app/',
     url: '/assets/p.png',
