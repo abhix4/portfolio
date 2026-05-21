@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs  text-neutral-400 font-mono ">
-          Last updated on 1/1/2026
+          Last updated on 21/5/2026
         </p>
       </div>
     </motion.div>
