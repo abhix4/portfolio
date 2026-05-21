@@ -72,8 +72,8 @@ export default function Hero() {
               Myself Abhishek
               <svg
                 viewBox="0 0 256 256"
-                width="16"
-                height="16"
+                width="14"
+                height="14"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g transform="translate(1.4066 1.4066) scale(2.81 2.81)">
