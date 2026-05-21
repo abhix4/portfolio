@@ -33,7 +33,7 @@ export default function Footer() {
       animate="visible"
       custom={1}
     >
-      <Image
+      {/* <Image
         src="/greeting.gif"
         width={400}
         height={30}
@@ -41,7 +41,7 @@ export default function Footer() {
         alt="abhi-logo"
         loading="eager"
         draggable={false}
-      />
+      /> */}
       <div className="flex flex-col lg:flex-row justify-between gap-8 text-sm w-full">
         <div className=" flex gap-4 ">
           <a href="https://x.com/abhiix4" className="flex gap-1 items-center">
