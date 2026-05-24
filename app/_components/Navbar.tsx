@@ -8,8 +8,8 @@ export default function NavBar() {
     <div className="flex justify-between items-end pb-8 max-w-[600px]">
       <Image
         src="/header.gif"
-        width={200}
-        height={50}
+        width={160}
+        height={30}
         className="cursor-pointer bg-cover -translate-x-1.5"
         onClick={() => router.push('/')}
         alt="abhi-logo"

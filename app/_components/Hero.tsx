@@ -53,7 +53,7 @@ export default function Hero() {
           className="flex flex-col gap-4 sm:gap-2"
         >
           <div className="text-start text-sm sm:text-start space-y-4 sm:mt-2">
-            <motion.p
+            {/* <motion.p
               variants={fadeUpVariants}
               initial="hidden"
               animate="visible"
@@ -61,8 +61,8 @@ export default function Hero() {
               className="leading-relaxed tracking-normal text-neutral-800  font-mono"
             >
               Hey<span>,</span>
-            </motion.p>
-            <motion.p
+            </motion.p> */}
+            {/* <motion.p
               variants={fadeUpVariants}
               initial="hidden"
               animate="visible"
@@ -88,7 +88,7 @@ export default function Hero() {
                 </g>
               </svg>
               <br />
-            </motion.p>
+            </motion.p> */}
             <motion.p
               variants={fadeUpVariants}
               initial="hidden"
