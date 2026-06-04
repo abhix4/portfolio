@@ -32,7 +32,7 @@ export default function CareersPage() {
   return (
     <div>
       <h2 className="text-xl tracking-tighter font-medium text-[#898988] lowercase">
-        Open source has been a big part of my journey learning new things. I've
+        A lot of whatever I know today comes from contributing to open source. I've
         contributed to <span> </span>
         <a
           href="https://github.com/antiwork"

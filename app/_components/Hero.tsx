@@ -7,10 +7,10 @@ import ProjectCard from './ProjectCard';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col space-y-8 sm:mt-[10px]">
+    <div className="flex flex-col space-y-8 ">
       <div className="flex flex-col ">
         <div className="flex flex-col gap-4 sm:gap-2">
-          <div className="text-start text-sm sm:text-start space-y-4 sm:mt-2">
+          <div className="text-start text-sm sm:text-start space-y-4">
             <h2 className="text-xl tracking-tighter text-[#898988] font-medium">
               i’m a full-stack developer who loves building products that feel
               thoughtful and human.
