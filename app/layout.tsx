@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/next';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  weight: ['500'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.className} `}>
-      <body className="antialiased bg-[#FEFFFF] font pb-40 sm:ml-0 max-w-[500px]  ml-12 sm:px-6">
+      <body className="antialiased bg-[#FEFFFF] pb-40 sm:ml-0 max-w-[500px]  ml-12 sm:px-6">
         <NavBar />
         {children}
         <Analytics />
