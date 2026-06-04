@@ -3,7 +3,7 @@ export default function CareerCard() {
     <div className="">
       <div className="flex sm:flex-col gap-3 sm:gap-2 sm:items-start items-center">
         <div>
-          <h2 className="text-xl tracking-tight font-medium text-[#898988]">
+          <h2 className="text-xl tracking-tighter font-medium text-[#898988]">
             from feb 2025 to april 2025 i've worked at
             <br className="sm:hidden" />
             <span> </span>

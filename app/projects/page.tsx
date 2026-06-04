@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <div>
-      <h2 className="text-xl tracking-tight  font-medium text-[#898988]">
+      <h2 className="text-xl tracking-tighter  font-medium text-[#898988]">
         below is a list of all the projects i built meanwhile learning.
       </h2>
 

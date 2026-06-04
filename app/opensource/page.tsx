@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <div>
-      <h2 className="text-xl tracking-tight font-medium text-[#898988] lowercase">
+      <h2 className="text-xl tracking-tighter font-medium text-[#898988] lowercase">
         Open source has been a big part of my journey learning new things. I've
         contributed to <span> </span>
         <a
@@ -69,11 +69,11 @@ export default function CareersPage() {
         improvements to new features and code refactors.
       </h2>
 
-      <h2 className="text-xl tracking-tight  font-medium text-[#898988] mt-6 lowercase">
+      <h2 className="text-xl tracking-tighter  font-medium text-[#898988] mt-6 lowercase">
         So far, I've shipped 100+ contributions across different projects and
         communities.
       </h2>
-      <h2 className="text-xl tracking-tight  text-[#898988] font-medium mt-6">
+      <h2 className="text-xl tracking-tighter  text-[#898988] font-medium mt-6">
         i've listed all my opensource contribution below<span></span>
       </h2>
       <ul className="relative list-disc pl-4 list flex flex-col space-y-2 mt-[30px]">
