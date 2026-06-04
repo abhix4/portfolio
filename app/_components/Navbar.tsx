@@ -22,25 +22,25 @@ export default function NavBar() {
     <div className="flex flex-col justify-between items-start gap-8 pb-8 sm:py-6 py-12 mt-2 max-w-[500px]">
       <ul className="flex gap-x-4 flex-wrap">
         <li
-          className="text-xl font-medium text-[#0199FF] underline cursor-pointer"
+          className="text-xl tracking-tight font-medium text-[#0199FF] underline cursor-pointer"
           onClick={() => router.push('/')}
         >
           home
         </li>
         <li
-          className="text-xl font-medium text-[#0199FF] underline cursor-pointer"
+          className="text-xl tracking-tight font-medium text-[#0199FF] underline cursor-pointer"
           onClick={() => router.push('/opensource')}
         >
           os contribution
         </li>
         <li
-          className="text-xl font-medium text-[#0199FF] underline cursor-pointer"
+          className="text-xl tracking-tight font-medium text-[#0199FF] underline cursor-pointer"
           onClick={() => router.push('/projects')}
         >
           stuffs, i built
         </li>
       </ul>
-      <h1 className="font-bold sm:text-3xl text-5xl">{heading}</h1>
+      <h1 className="font-bold sm:text-3xl text-5xl tracking-tight ">{heading}</h1>
     </div>
   );
 }

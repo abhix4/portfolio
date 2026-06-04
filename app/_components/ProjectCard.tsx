@@ -19,7 +19,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="text-xl font-medium">
-      <h2 className=" text-xl text-[#898988] font-medium">
+      <h2 className=" text-xl tracking-tight  text-[#898988] font-medium">
         <a
           href={link}
           target="_blank"

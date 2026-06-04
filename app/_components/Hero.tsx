@@ -11,11 +11,11 @@ export default function Hero() {
       <div className="flex flex-col ">
         <div className="flex flex-col gap-4 sm:gap-2">
           <div className="text-start text-sm sm:text-start space-y-4 sm:mt-2">
-            <h2 className="text-xl  text-[#898988] font-medium">
+            <h2 className="text-xl tracking-tight text-[#898988] font-medium">
               i’m a full-stack developer who loves building products that feel
               thoughtful and human.
             </h2>
-            <h2 className=" font-medium text-xl text-[#898988]">
+            <h2 className=" font-medium tracking-tight  text-xl text-[#898988]">
               i work with deep care and intention.
             </h2>
           </div>
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex flex-wrap justify-start items-center gap-2 mb-6 "></div>
       </div>
 
-      <h2 className="text-xl font-medium text-[#898988]">
+      <h2 className="text-xl font-medium tracking-tight  text-[#898988]">
         if you're looking to hire me, you can get my cv{' '}
         <a
           href="/abhishek_2026.pdf"
@@ -42,7 +42,7 @@ export default function Hero() {
       </h2>
 
       <div>
-        <h2 className="text-xl font-medium text-[#898988]">
+        <h2 className="text-xl font-medium tracking-tight  text-[#898988]">
           some of the stuff that i built in the past —
         </h2>
         <div>
