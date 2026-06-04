@@ -505,15 +505,15 @@ export const images = [
 
 export const projects = [
   {
-    title: 'bondify.art',
+    title: 'bondify',
     link: 'https://bondify.art/',
     url: '/assets/p.png',
-    desc: 'Free marriage biodata tool',
+    desc: 'free marriage biodata tool',
     git: 'https://github.com/Abhiifour/VoteIt',
     tech: 'ReactJs • TailwindCSS • Firebase • Javascript ',
   },
   {
-    title: 'Stroke',
+    title: 'stroke',
     link: 'https://stroke.abhii.space',
     url: '/assets/p.png',
     desc: 'Create Hand-drawn SVG animations for logos, signatures, and illustrations.',
@@ -565,7 +565,7 @@ export const projects = [
     link: 'https://trackbetter.abhii.space',
     url: '/assets/p4.png',
     desc: 'A platform to track and monitor your favourite open source organisation',
-    git: 'https://github.com/Abhiifour/Task-app',
+    git: 'https://github.com/abhix4/better_track',
     tech: 'NextJs • TailwindCSS • NodeJs • ExpressJs • Prisma • PostgressSQL • Typescript',
   },
   {

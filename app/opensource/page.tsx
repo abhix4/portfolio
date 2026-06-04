@@ -1,22 +1,20 @@
-import { ScrollArea } from '@/components/ui/scroll-area';
-import CareerCard from '../_components/CareerCard';
 import Opensource from '../_components/OpenSource';
 import { Metadata } from 'next';
-import Image from 'next/image';
-import { images, contributions } from '@/constants';
+
+import { contributions } from '@/constants';
 import Footer from '../_components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Abhishek | Contributions',
+  title: 'Abhishek',
   description: 'My open-source contributions and journey.',
   openGraph: {
-    title: 'Abhishek | Contributions',
+    title: 'Abhishek',
     description: 'Explore my open-source journey and contributions.',
     url: 'https://i.abhiifour.xyz/career',
     siteName: "Abhishek's Portfolio",
     images: [
       {
-        url: 'https://i.abhiifour.xyz/ossv1.png',
+        url: 'https://i.abhii.space/ossv1.png',
         width: 1200,
         height: 630,
         alt: 'Abhishek OSS Contributions',
@@ -33,39 +31,63 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <div>
-      <h1 className="text-lg py-6 uppercase tracking-tight font-mono">
-        OSS Contributions <span></span>
-      </h1>
+      <h2 className="text-xl font-medium text-[#898988] lowercase">
+        Open source has been a big part of my journey learning new things. I've
+        contributed to <span> </span>
+        <a
+          href="https://github.com/antiwork"
+          target="_blank"
+          className="text-xl text-[#0199FF] hover:underline font-medium"
+        >
+          antiwork
+        </a>
+        ,{' '}
+        <a
+          href="https://github.com/calcom"
+          target="_blank"
+          className="text-xl text-[#0199FF] hover:underline font-medium"
+        >
+          cal.com
+        </a>
+        ,{' '}
+        <a
+          href="https://github.com/Mail-0/Zero"
+          target="_blank"
+          className="text-xl text-[#0199FF] hover:underline font-medium"
+        >
+          mail-0
+        </a>
+        ,{' '}
+        <a
+          href="https://github.com/morphik-org/morphik-core"
+          target="_blank"
+          className="text-xl text-[#0199FF] hover:underline font-medium"
+        >
+          morphik
+        </a>
+        , and more, working on everything from ui fixes and responsiveness
+        improvements to new features and code refactors.
+      </h2>
 
-      <div className="flex flex-wrap justify-center lg:justify-evenly items-center gap-6 mb-6 ">
-        {images.map((img, index) => (
-          <a href={img.link} key={index}>
-            <Image
-              src={img.url}
-              width={45}
-              height={45}
-              priority
-              className="cursor-pointer rounded-lg overflow-hidden grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition-all"
-              alt="abhi-logo"
-              loading="eager"
-              draggable={false}
-            />
-          </a>
-        ))}
-      </div>
-
-      <div className="relative flex flex-col mt-12 py-5">
+      <h2 className="text-xl font-medium text-[#898988] mt-6 lowercase">
+        So far, I've shipped 100+ contributions across different projects and
+        communities.
+      </h2>
+      <h2 className="text-xl text-[#898988] font-medium mt-6">
+        i've listed all my opensource contribution below<span></span>
+      </h2>
+      <ul className="relative list-disc pl-4 list flex flex-col space-y-2 mt-[30px]">
         {contributions.map((contribution, index) => (
-          <Opensource
-            key={index}
-            title={contribution.title}
-            company={contribution.company}
-            url={contribution.url}
-          />
+          <li key={index}>
+            <Opensource
+              key={index}
+              title={contribution.title}
+              company={contribution.company}
+              url={contribution.url}
+            />
+          </li>
         ))}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/10 to-transparent"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/10 to-transparent"></div>
-      </div>
+      </ul>
 
       <Footer />
     </div>

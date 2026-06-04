@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist_Mono, Inter } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import NavBar from './_components/Navbar';
 import { Analytics } from '@vercel/analytics/next';
@@ -7,15 +7,11 @@ import { Analytics } from '@vercel/analytics/next';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-});
-
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
+  weight: ['500'],
 });
 
 export const metadata: Metadata = {
-  title: 'Abhishek | Portfolio',
+  title: 'Abhishek',
   description:
     'Just vibin’ through code, shipping small PRs and building cool stuff 🚀✨',
   openGraph: {
@@ -41,12 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable}`}>
-      <body className="antialiased bg-[#FFFEFE] pb-40  max-w-[600px] mx-auto sm:px-6">
+    <html lang="en" className={`${inter.className} `}>
+      <body className="antialiased bg-[#FEFFFF] font pb-40 sm:ml-0 max-w-[500px]  ml-12 sm:px-6">
         <NavBar />
         {children}
+        <Analytics />
       </body>
-      <Analytics />
     </html>
   );
 }

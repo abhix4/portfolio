@@ -45,6 +45,11 @@
   height: 0;
 }
 
+.list li::marker {
+  font-size: 20px;
+  color: #898988;
+}
+
 /* Firefox */
 .scrollbar {
   scrollbar-width: thin;
@@ -118,8 +123,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-body {
-  @apply font-sans;
 }
