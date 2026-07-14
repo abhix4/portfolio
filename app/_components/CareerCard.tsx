@@ -29,7 +29,7 @@ export default function CareerCard() {
             >
               antiwork
             </a>
-            , eventually starting working as a software engineer
+            , eventually started working as a software engineer
             contract/freelance based there.
           </h2>
         </div>
